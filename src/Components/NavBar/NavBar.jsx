@@ -1,11 +1,13 @@
 import CartWidget from "../CartWidget/CartWidget.jsx";
+import { NavLink } from "react-router-dom";
+import "./NavBar.css"
 
 const NavBar = () =>{
     return(
         <div className="d-flex justify-content-evenly bg-dark w-100">
-            <a className="nav-link active" aria-current="page" href="/"><button className="bg-transparent">Remeras</button></a>
-            <a className="nav-link active" aria-current="page" href="/"><button className="bg-transparent">Pantalones</button></a>
-            <a className="nav-link active" aria-current="page" href="/"><button className="bg-transparent">Zapatillas</button></a>
+            <NavLink to= {"/category/Remeras"} className="categoryButton">Remeras</NavLink>
+            <NavLink to= {"/category/Pantalones"} className="categoryButton">Pantalones</NavLink>
+            <NavLink to= {"/category/Zapatillas"} className="categoryButton">Zapatillas</NavLink>
         </div>
     )
 }

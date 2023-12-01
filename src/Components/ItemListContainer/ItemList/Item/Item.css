@@ -1,0 +1,18 @@
+.card{
+    display: flex;
+    width: 300px;
+    height: 425px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.CardImg{
+    max-height: 250px;
+    max-width: 90%;
+}
+
+.detailButton{
+    font-size: large;
+    color: #000;
+}
