@@ -1,0 +1,12 @@
+.CartItem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 8px;
+}
+
+.CartItem img{
+    max-height: 75px;
+    max-width: 75px;
+}

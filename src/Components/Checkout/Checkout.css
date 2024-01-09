@@ -1,0 +1,26 @@
+.checkoutImg{
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.checkoutImgContainer{
+    height: 75px;
+    width: 75px;
+}
+
+.checkoutOrder{
+    width: 35%;
+}
+
+.form{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.formInput{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8px;
+}
