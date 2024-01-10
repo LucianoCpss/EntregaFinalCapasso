@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import './Checkout.css'
+import { NavLink } from "react-router-dom";
 
 export const Checkout = () =>{
     const [name, setName] = useState('');
@@ -32,7 +33,6 @@ export const Checkout = () =>{
             return;
         }
 
-        // const total = totalPrice;
         const total= typeof totalPrice === 'number' ? totalPrice : 0;
         
         const order ={
@@ -134,10 +134,13 @@ export const Checkout = () =>{
           {error && <p>{error}</p>}
 
           {orderId && (
-            <p>
-              ¡GRACIAS POR TU COMPRA! Tu numero de seguimiento es: <br />
-              {""} {orderId} {""} <br />
-            </p>
+            <div>
+              <p>
+                ¡GRACIAS POR TU COMPRA! Tu numero de seguimiento es: <br />
+                {""} {orderId} {""} <br />
+              </p>
+              <NavLink to= {"/"}>Regresar al inicio</NavLink>
+            </div>
           )}
 
           <div className='formInput justify-content-center mt-4'>
